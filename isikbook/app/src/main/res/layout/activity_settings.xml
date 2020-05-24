@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity"
+    android:background="@android:color/white">
+
+    <include layout="@layout/actionbar"
+        android:id="@+id/actionbarAyarlar" />
+
+
+    <SearchView
+        android:id="@+id/search_button"
+        android:layout_below="@+id/actionbarAyarlar"
+        android:layout_width="354dp"
+        android:layout_height="64dp"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="47dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="80dp"
+        android:background="@color/colorGrey"
+        android:layout_marginStart="80dp" />
+    <Button
+        android:layout_below="@+id/actionbarAyarlar"
+        android:id="@+id/btnMenu"
+        android:layout_width="66dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/menuicon" />
+
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/homeicon"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="50dp" />
+
+    <Button
+        android:id="@+id/button_account"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/accounticon"
+        />
+
+    <Button
+        android:id="@+id/button_camera"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/cameraicon"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="130dp" />
+
+
+    <Button
+        android:id="@+id/button_bildirim"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/bildirimicon"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="210dp" />
+
+    <Button
+        android:id="@+id/hesapAyarlari"
+        android:layout_width="196dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/search_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="102dp"
+        android:background="@color/colorIsik"
+        android:textColor="@android:color/white"
+        android:text="Hesap Ayarları"
+        android:textSize="20sp"/>
+
+    <Button
+        android:background="@color/colorIsik"
+        android:id="@+id/sifreAyarlari"
+        android:layout_width="196dp"
+        android:layout_height="80dp"
+        android:layout_below="@+id/hesapAyarlari"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="70dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="25dp"
+        android:text="ŞİFRE AYARLARI"
+        android:textSize="20sp"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

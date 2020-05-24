@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KameraActivity"
+    android:background="@android:color/white">
+    <include layout="@layout/actionbar"
+        android:id="@+id/actionbarKamera" />
+    <EditText
+        android:layout_below="@+id/actionbarKamera"
+        android:id="@+id/kitap_ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/kitap_ad"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorIsik"
+        android:layout_marginTop="30dp" />
+
+    <EditText
+    android:id="@+id/yazar"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/kitap_ad"
+    android:hint="@string/yazar"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:textColor="@color/colorIsik"
+    android:layout_marginTop="10dp" />
+    <EditText
+        android:id="@+id/ders"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/yazar"
+        android:hint="Ders"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorIsik"
+        android:layout_marginTop="10dp" />
+     <EditText
+        android:id="@+id/fiyat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ders"
+        android:hint="@string/fiyat"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorIsik"
+        android:layout_marginTop="10dp" />
+
+    <ImageView android:id="@+id/img_picture"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="320dp"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@string/todo" />
+    <Button
+        android:background="@color/colorIsik"
+        android:layout_below="@+id/img_picture"
+        android:layout_marginTop="20dp"
+        android:id="@+id/fotoSecc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Seç"
+        android:textSize="20sp"/>
+    <Button
+        android:id="@+id/yukle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fotoSecc"
+        android:layout_marginTop="18dp"
+        android:background="@color/colorIsik"
+        android:text="@string/y_kle"
+        android:textSize="20sp" />
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".MainActivity" android:background="@color/colorIsik"
+android:padding="20dp">
+
+<ImageView
+    android:id="@+id/logo"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/isik"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="70dp"
+    android:contentDescription="@string/todo" />
+
+<TextView
+    android:id="@+id/slogan"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/welcome"
+    android:textStyle="italic"
+    android:textSize="25sp"
+    android:textColor="@android:color/white"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="280dp"
+    />
+
+<Button
+    android:id="@+id/WelcomeLoginBtn"
+    android:layout_width="172dp"
+    android:layout_height="63dp"
+    android:layout_below="@+id/slogan"
+    android:layout_marginTop="20dp"
+    android:background="@android:color/white"
+    android:text="@string/login"
+    android:textColor="@color/colorIsik"
+    android:textSize="20sp"
+    android:textStyle="bold"
+    android:layout_marginStart="100dp"
+    android:layout_marginEnd="100dp"/>
+
+<Button
+    android:id="@+id/WelcomeNewAccountBtn"
+    android:layout_width="172dp"
+    android:layout_height="63dp"
+    android:layout_below="@+id/WelcomeLoginBtn"
+    android:layout_marginTop="15dp"
+    android:layout_marginStart="100dp"
+    android:layout_marginEnd="100dp"
+    android:background="@android:color/white"
+    android:text="@string/new_account"
+    android:textColor="@color/colorIsik"
+    android:textSize="20sp"
+    android:textStyle="bold" />
+
+</RelativeLayout>

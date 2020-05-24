@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".KitapActivity">
+    <include layout="@layout/actionbar"
+        android:id="@+id/actionbarOkumaKitap"/>
+    <SearchView
+        android:id="@+id/search"
+        android:layout_below="@+id/actionbarOkumaKitap"
+        android:layout_width="354dp"
+        android:layout_height="64dp"
+        tools:layout_editor_absoluteX="28dp"
+        tools:layout_editor_absoluteY="47dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="80dp"
+        android:background="@color/colorGrey"
+        android:layout_marginStart="80dp" />
+
+    <Button
+        android:layout_below="@+id/actionbarOkumaKitap"
+        android:id="@+id/btnMenu"
+        android:layout_width="66dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/menuicon" />
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/homeicon"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="50dp" />
+    <Button
+        android:id="@+id/button_account"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/accounticon"
+        />
+    <Button
+        android:id="@+id/button_camera"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/cameraicon"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="130dp" />
+    <Button
+        android:id="@+id/button_bildirim"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/bildirimicon"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="210dp" />
+
+    <ImageButton
+        android:id="@+id/book1"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_below="@+id/btnMenu"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/book1" />
+
+    <ImageButton
+        android:background="@drawable/book2"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:id="@+id/book2"
+        android:layout_below="@+id/search"
+        android:layout_marginTop="80dp"
+        android:layout_marginStart="20dp"
+        android:layout_toRightOf="@+id/book1"/>
+</RelativeLayout>

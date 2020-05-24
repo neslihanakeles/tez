@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewAccountActivity"
+    android:background="@android:color/white">
+
+    <include layout="@layout/actionbar"
+        android:id="@+id/actionbarNewAccount"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="165dp"
+        android:layout_marginLeft="170dp"
+        android:text="@string/your_bookstore"
+        android:textColor="@color/colorIsik"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:layout_marginStart="170dp" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text1"
+        android:hint="@string/username"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorIsik"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:importantForAutofill="no" />
+
+    <EditText
+        android:id="@+id/mail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/username"
+        android:hint="@string/mail"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorIsik"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:importantForAutofill="no" />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mail"
+        android:hint="@string/password"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorIsik"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:importantForAutofill="no" />
+
+    <Button
+        android:id="@+id/btnOlustur"
+        android:layout_width="189dp"
+        android:layout_height="83dp"
+        android:layout_below="@+id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorIsik"
+        android:text="@string/olustur"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+</RelativeLayout>

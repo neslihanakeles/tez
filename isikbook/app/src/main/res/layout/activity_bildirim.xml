@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BildirimActivity">
+
+    <include layout="@layout/actionbar"
+        android:id="@+id/actionbarBildirim"/>
+    <Button
+        android:id="@+id/button_home"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/homeicon"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="50dp" />
+
+    <Button
+        android:id="@+id/button_account"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/accounticon"/>
+
+    <Button
+        android:id="@+id/button_camera"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/cameraicon"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="130dp" />
+
+
+    <Button
+        android:id="@+id/button_bildirim"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/bildirimicon"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="210dp" />
+
+</RelativeLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AnaekranActivity"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/imglogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/todo"
+        android:src="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/imgbook"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:src="@drawable/books"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp" />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/imgbook"
+        android:text="Kitaplar için tıklayın"
+        android:textSize="22sp"
+        android:textColor="@color/colorIsik"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="80dp"/>
+
+ <Button
+        android:id="@+id/button_home"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/homeicon"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="50dp" />
+
+    <Button
+        android:id="@+id/button_account"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="280dp"
+        android:layout_marginTop="550dp"
+        android:background="@drawable/accounticon"/>
+
+    <Button
+        android:id="@+id/button_camera"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/cameraicon"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="130dp" />
+
+
+    <Button
+        android:id="@+id/button_bildirim"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:background="@drawable/bildirimicon"
+        android:layout_marginTop="550dp"
+        android:layout_marginStart="210dp" />
+</RelativeLayout>

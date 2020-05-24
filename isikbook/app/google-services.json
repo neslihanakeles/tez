@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "622306035362",
+    "firebase_url": "https://isikbookapp0.firebaseio.com",
+    "project_id": "isikbookapp0",
+    "storage_bucket": "isikbookapp0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:622306035362:android:0b4e662df57fa7fe9939fb",
+        "android_client_info": {
+          "package_name": "com.example.isikbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "622306035362-241vc71842r9e711ilfhl90maqfgl2q0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.isikbook",
+            "certificate_hash": "821132192d9b058e04e2db70e050f64918ff215a"
+          }
+        },
+        {
+          "client_id": "622306035362-fbrrcjfdalsqbpc2cuvkibpb078rmpgk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEJMNsIcDcnKu-Mvbi3rsqYLkWd316_bo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "622306035362-fbrrcjfdalsqbpc2cuvkibpb078rmpgk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

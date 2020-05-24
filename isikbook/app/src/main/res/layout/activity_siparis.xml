@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SiparisActivity"
+    android:background="@android:color/white">
+    <include layout="@layout/actionbar"
+        android:id="@+id/actionbarSiparis"/>
+
+
+    <EditText
+        android:hint="İsim Gir"
+        android:id="@+id/isimgir"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_button"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="69dp"
+        android:layout_toRightOf="@+id/mevcutSifre"
+        android:textColor="@color/colorIsik"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/adresYaz"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/isimgir"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="17dp"
+        android:backgroundTintMode="screen"
+        android:hint="Adres"
+        android:textSize="25sp"
+        tools:visibility="visible" />
+
+    <TextView
+    android:id="@+id/num"
+    android:layout_width="200dp"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/adresYaz"
+    android:layout_marginTop="40dp"
+    android:layout_marginStart="30dp"
+    android:text="Numara"
+    android:textSize="25dp"
+    android:background="@color/colorGrey"/>
+    <EditText
+        android:id="@+id/numYaz"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/num"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:inputType="phone"/>
+    <Button
+        android:id="@+id/siparisVer"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numYaz"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:text="@string/siparis_ver"
+        android:textSize="25sp"/>
+
+</RelativeLayout>
